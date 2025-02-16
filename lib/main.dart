@@ -61,22 +61,29 @@ class _MyHomePageState extends State<MyHomePage> {
         appBar: AppBar(
           title: Text("TheFirstApp"),
         ),
+        //overflow issue in row
+
         body: Container(
           height: double.infinity,
-          child: Row(
-            mainAxisAlignment: MainAxisAlignment.center,
-            crossAxisAlignment: CrossAxisAlignment.center,
-            children: [
-              Text(
-                "4.0",
-              ),
-              Icon(Icons.star, color: Colors.black, size: 50),
-              Icon(Icons.star, color: Colors.black, size: 50),
-              Icon(Icons.star, color: Colors.black, size: 50),
-              Icon(Icons.star, color: Colors.black, size: 50),
-              Icon(Icons.star, color: Colors.white, size: 50),
-              Text("SUBMIT"),
-            ],
+          width: double.infinity,
+          child: SingleChildScrollView(
+            scrollDirection: Axis.horizontal,
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              crossAxisAlignment: CrossAxisAlignment.center,
+              children: [
+                Text(
+                  "4.0",
+                ),
+                Icon(Icons.star, color: Colors.black, size: 50),
+                Icon(Icons.star, color: Colors.black, size: 50),
+                Icon(Icons.star, color: Colors.black, size: 50),
+                Icon(Icons.star, color: Colors.black, size: 50),
+                Icon(Icons.star,
+                    color: const Color.fromRGBO(220, 162, 162, 1), size: 50),
+                Text("SUBMIT"),
+              ],
+            ),
           ),
         ));
   }
