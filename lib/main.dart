@@ -62,6 +62,8 @@ class _MyHomePageState extends State<MyHomePage> {
           title: Text("TheFirstApp"),
         ),
         body: Row(
+          mainAxisAlignment: MainAxisAlignment.center,
+          crossAxisAlignment: CrossAxisAlignment.center,
           children: [
             Text("4.0"),
             Icon(Icons.star, color: Colors.black, size: 50),
