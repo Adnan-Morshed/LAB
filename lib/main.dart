@@ -61,18 +61,23 @@ class _MyHomePageState extends State<MyHomePage> {
         appBar: AppBar(
           title: Text("TheFirstApp"),
         ),
-        body: Row(
-          mainAxisAlignment: MainAxisAlignment.center,
-          crossAxisAlignment: CrossAxisAlignment.center,
-          children: [
-            Text("4.0"),
-            Icon(Icons.star, color: Colors.black, size: 50),
-            Icon(Icons.star, color: Colors.black, size: 50),
-            Icon(Icons.star, color: Colors.black, size: 50),
-            Icon(Icons.star, color: Colors.black, size: 50),
-            Icon(Icons.star, color: Colors.white, size: 50),
-            Text("SUBMIT"),
-          ],
+        body: Container(
+          height: double.infinity,
+          child: Row(
+            mainAxisAlignment: MainAxisAlignment.center,
+            crossAxisAlignment: CrossAxisAlignment.center,
+            children: [
+              Text(
+                "4.0",
+              ),
+              Icon(Icons.star, color: Colors.black, size: 50),
+              Icon(Icons.star, color: Colors.black, size: 50),
+              Icon(Icons.star, color: Colors.black, size: 50),
+              Icon(Icons.star, color: Colors.black, size: 50),
+              Icon(Icons.star, color: Colors.white, size: 50),
+              Text("SUBMIT"),
+            ],
+          ),
         ));
   }
 }
